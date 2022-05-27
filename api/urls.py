@@ -3,5 +3,5 @@ from .views import ListarSalas
 
 
 urlpatterns = [
-  path('salas', ListarSalas.as_view(), name='listar_salas'),
+  path('salas', ListarSalas.as_view(), name='salas'),
 ]

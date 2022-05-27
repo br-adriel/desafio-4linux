@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',
-    'salas.apps.SalasConfig'
+    'salas.apps.SalasConfig',
+    'api.apps.ApiConfig'
 ]
 
 MIDDLEWARE = [

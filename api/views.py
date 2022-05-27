@@ -1,8 +1,8 @@
-from rest_framework.generics import ListAPIView
+from rest_framework.generics import ListCreateAPIView
 from salas.models import Sala
 from salas.serializers import SalaSerializer
 
 
-class ListarSalas(ListAPIView):
+class ListarSalas(ListCreateAPIView):
     queryset = Sala.objects.all()
     serializer_class = SalaSerializer

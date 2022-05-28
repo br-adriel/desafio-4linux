@@ -4,7 +4,7 @@ from django.db import models
 class Sala(models.Model):
     capacidade = models.IntegerField()
     disponivel = models.BooleanField(default=True, verbose_name='disponível');
-    nome = models.CharField(max_length=250)
+    nome = models.CharField(max_length=250, unique=True)
 
 
 class Agendamento(models.Model):

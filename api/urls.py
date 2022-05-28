@@ -1,8 +1,9 @@
 from django.urls import path
-from .views import ListarSalas, SalasDisponiveis
+from .views import ListarSalas, SalasDisponiveis, buscar_salas
 
 
 urlpatterns = [
   path('salas', ListarSalas.as_view(), name='salas'),
   path('salas/disponivel', SalasDisponiveis.as_view(), name='salas-disponiveis'),
+  path('salas/buscar/<str:nome>', buscar_salas, name='buscar-salas'),
 ]

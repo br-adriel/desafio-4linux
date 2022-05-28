@@ -13,5 +13,5 @@ class Sala(models.Model):
 class Agendamento(models.Model):
     inicio = models.DateTimeField(verbose_name='início')
     fim = models.DateTimeField()
-    instrutor = models.CharField(max_length=250)
+    turma = models.CharField(max_length=250)
     sala = models.ForeignKey(Sala, on_delete=models.CASCADE)

@@ -46,3 +46,17 @@ API para gerencialmento de salas de aula desenvolvida como resposta a um desafio
 
 7. Caso queira executar o projeto em modo debug, altere o valor de `DEBUG` do
    arquivo `.env` para `True`
+
+8. Execute as migracoes e inicie o servidor
+
+   ```bash
+   # windows
+   py manage.py migrate
+   py manage.py runserver
+
+   # linux
+   python3 manage.py migrate
+   python3 manage.py runserver
+   ```
+
+9. Acesse o endereco `localhost:8000/api/salas`

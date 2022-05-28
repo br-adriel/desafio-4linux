@@ -6,6 +6,9 @@ class Sala(models.Model):
     disponivel = models.BooleanField(default=True, verbose_name='disponível');
     nome = models.CharField(max_length=250, unique=True)
 
+    def __str__(self):
+        return self.nome
+
 
 class Agendamento(models.Model):
     inicio = models.DateTimeField(verbose_name='início')
